@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<TITLE> Adventure </TITLE>
+</HEAD>
+<BODY>
+<h2>Haunted House Adventure</h2>
+
+<script language="Javascript">
+
+document.bgColor = "magenta";
+
+document.fontFamily="Arial";
+
+var hauntedhouse = new Array();
+//var xloc=0;
+//var yloc=0;
+
+hauntedhouse[1,2] = "creepy lounge";
+hauntedhouse[1,1] = "attic";
+
+
+
+// display prompt box that ask for name and 
+// store result in a variable called who
+document.write("You are in a spooky haunted house. There are 2 exits. North and South");
+var direction = window.prompt("Where do you want to go?");
+//direction = "North";
+// display prompt box that ask for favorite color and 
+// store result in a variable called favcolor
+
+
+
+if (direction.indexOf("North") >= 0) {
+	document.write("You travel North."); xloc = 1; yloc = 2; document.write("You enter the ",hauntedhouse[xloc,yloc]); document.write("<img id='Lounge' src='adventure/lounge.jpg' alt=' ' />"); 
+	} 
+if (direction.indexOf("north") >= 0) {
+	document.write("You travel North."); xloc = 1; yloc = 2; document.write("You enter the ",hauntedhouse[xloc,yloc]); document.write("<img id='Lounge' src='adventure/lounge.jpg' alt=' ' />"); 
+	} 
+
+if (direction.indexOf("South") >= 0) {
+	document.write("You travel South."); xloc = 1; yloc = 1; document.write("You enter the ",hauntedhouse[xloc,yloc]);  document.write("<img id='Attic' src='adventure/attic.jpg' alt=' ' />"); 
+	} 
+
+
+// Change background color to their favorite color
+
+//for (var i=0;i<10;i++)
+// { 
+//document.write(i);
+// }
+
+
+
+</script>
+
+
+</BODY>
+</HTML>
